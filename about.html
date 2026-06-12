@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — mentafotostudio</title>
+<meta name="description" content="About mentafotostudio, wedding photography based in the Cotswolds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Dancing+Script:wght@500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">mentafotostudio</a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" title="Video">Video</a>
+      <a href="#" class="icon-link" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<section class="page">
+  <div class="wrap split">
+    <div class="portrait reveal in">
+      <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=1200&auto=format&fit=crop" alt="Portrait of the photographer">
+    </div>
+    <div>
+      <p class="eyebrow">About</p>
+      <h1>Hello, we're <em>menta</em></h1>
+      <p>We've spent the last ten years photographing weddings across England — in barns, gardens, village halls and the occasional clifftop. What keeps us coming back is always the same thing: the small, unrepeatable moments that happen between people who love each other.</p>
+      <p>Our approach is calm and unobtrusive. We won't line you up for hours of formal portraits or ask you to fake a laugh. We'd rather wait for the real one — it's always better.</p>
+      <p>When we're not at a wedding you'll find us walking the dog somewhere muddy, or printing photographs in our little studio near Stow-on-the-Wold.</p>
+      <ul class="detail-list">
+        <li><span class="k">Based in</span><span>The Cotswolds, England</span></li>
+        <li><span class="k">Travels</span><span>Across the UK &amp; Europe</span></li>
+        <li><span class="k">Style</span><span>Natural, documentary, soft light</span></li>
+        <li><span class="k">Delivery</span><span>500+ edited photographs, online gallery</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="sig brand-foot">mentafotostudio <em>Wedding photography — the Cotswolds, England</em></div>
+    <div class="meta">
+      <a href="mailto:hello@mentafotostudio.com">hello@mentafotostudio.com</a><br>
+      &copy; 2026 mentafotostudio
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
