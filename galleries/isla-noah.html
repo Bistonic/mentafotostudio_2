@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isla & Noah — Menta Studio</title>
+<meta name="description" content="The wedding of Isla and Noah at Caswell House, Oxfordshire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><img src="../images/logo-dark.png" alt="Menta Studio — wedding photography"></a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="../index.html#portfolio" aria-current="page">Portfolio</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a href="#" title="Video">Video</a>
+      <a href="https://www.instagram.com/mentafotostudio" target="_blank" rel="noopener" class="icon-link" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<section class="gallery-hero">
+  <div class="wrap">
+    <p class="eyebrow">15 . 06 . 2024</p>
+    <h1>Isla<em>&amp;</em>Noah</h1>
+    <p class="where">Caswell House, Oxfordshire</p>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="frames">
+      <figure class="full reveal in"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=2000&auto=format&fit=crop" alt="Isla and Noah — wedding photograph"></figure>
+      <figure class="reveal"><img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?q=80&w=1200&auto=format&fit=crop" alt="Isla and Noah — wedding photograph" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://images.unsplash.com/photo-1494955870715-979ca4f13bf0?q=80&w=1200&auto=format&fit=crop" alt="Isla and Noah — wedding photograph" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://images.unsplash.com/photo-1460364157752-926555421a7e?q=80&w=1200&auto=format&fit=crop" alt="Isla and Noah — wedding photograph" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?q=80&w=1200&auto=format&fit=crop" alt="Isla and Noah — wedding photograph" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="Isla and Noah — wedding photograph" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop" alt="Isla and Noah — wedding photograph" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=1200&auto=format&fit=crop" alt="Isla and Noah — wedding photograph" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1200&auto=format&fit=crop" alt="Isla and Noah — wedding photograph" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<nav class="pager" aria-label="More weddings">
+  <div class="wrap">
+    <a class="prev" href="charlotte-henry.html">&larr; Previous<span>Charlotte &amp; Henry</span></a>
+    <a class="next" href="freya-sam.html">Next &rarr;<span>Freya &amp; Sam</span></a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="sig"><img src="../images/logo-dark.png" alt="Menta Studio"><em>Wedding photography — the Cotswolds, England</em></div>
+    <div class="meta">
+      <a href="mailto:hello@mentafotostudio.com">hello@mentafotostudio.com</a><br>
+      &copy; 2026 Menta Studio
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
